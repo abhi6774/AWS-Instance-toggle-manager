@@ -1,0 +1,190 @@
+{"notificationType":"Received","mail":{"timestamp":"2023-03-18T06:58:00.200Z","source":"01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com","messageId":"afv87h52j42ilo3262i69r6rc603khgfqodojdo1","destination":["admin@glxymesh.co"],"headersTruncated":false,"headers":[{"name":"Return-Path","value":"<01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com>"},{"name":"Received","value":"from a11-19.smtp-out.amazonses.com (a11-19.smtp-out.amazonses.com [54.240.11.19]) by inbound-smtp.us-east-1.amazonaws.com with SMTP id afv87h52j42ilo3262i69r6rc603khgfqodojdo1 for admin@glxymesh.co; Sat, 18 Mar 2023 06:58:00 +0000 (UTC)"},{"name":"X-SES-Spam-Verdict","value":"PASS"},{"name":"X-SES-Virus-Verdict","value":"PASS"},{"name":"Received-SPF","value":"pass (spfCheck: domain of bounces.certificates.amazon.com designates 54.240.11.19 as permitted sender) client-ip=54.240.11.19; envelope-from=01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com; helo=a11-19.smtp-out.amazonses.com;"},{"name":"Authentication-Results","value":"amazonses.com; spf=pass (spfCheck: domain of bounces.certificates.amazon.com designates 54.240.11.19 as permitted sender) client-ip=54.240.11.19; envelope-from=01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com; helo=a11-19.smtp-out.amazonses.com; dkim=pass header.i=@certificates.amazon.com; dkim=pass header.i=@amazonses.com; dmarc=pass header.from=certificates.amazon.com;"},{"name":"X-SES-RECEIPT","value":"AEFBQUFBQUFBQUFFdXFXOHpxM1VrdjM0VTMvTXM1OXpYTVMyWSs1dHE5VUFLSUx4dC9BVDZBRGlxVGxBWnBHeVZETFhNejVwd1dFWHE1RXpaa2VQTWoyN3lsc2J5dURUT1pybkdaNWZWSVhTT0kxZVZDOXNUaEZoOVNMNjIwRVJDWlpmVHF3c0phUDlmLzUrSjhWbnk0azBOdlYxR0I4Y09oZHRWN3hsZjQ2SUExdjVUR01ESWZEa0thalZyczRucHJjdnVjbHFBU1ZxRzBpNFpUNVMyZGNEK1VOb21WY0dZbFdEMUtSVEJxUWNjbFZCZFlhTzF3enZCVWxWV3FmS0FnR2d1SUU2SEUxOS9sMVpVRkJ3dG9hWlZBZ01iUE95Y0o0WkE3L0N2aXhmbFlpc3hoK1k0SDR1d0xhcFRBOWQxYTF5MjhPT3NkdkZxbXF5c2lvUVdzNFlUbGZ1dnhZT3JaaVZIYk5PdGRoN2h2emFXM3Y4S2RUTG54QmlyblRiOENlSkcvUStJWDZvPQ=="},{"name":"X-SES-DKIM-SIGNATURE","value":"a=rsa-sha256; q=dns/txt; b=OTNEn3A/AYX0VYAQzVeSiPS/A+VvjMnVWeBfrVSajLXBikeVLlbSToq/CcyhcwKt+0KEOibgLpxJQMcqjQudOt/pEDb4psDjUiR+FB7BKdwE/ijwiEj9nBtsqXpfSeVx5rV+VUtt/sD6FW2jXTH5ea6BzIIRXVc1noLEyQQ9bEc=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1679122680; v=1; bh=zCycyghpu6yrESjQb2zzbec2+709Mvj9BWeZr2/RRcA=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;"},{"name":"DKIM-Signature","value":"v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=6qmbfpvjuhhxvoggo6cu77v4uhc7snn6; d=certificates.amazon.com; t=1679122679; h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type; bh=zCycyghpu6yrESjQb2zzbec2+709Mvj9BWeZr2/RRcA=; b=HyCH6iIMAWHUkmuWdq8DHJzSjuu0/y6xijeOJkluK/BMi0aKE7JC3c8YskhFJS1cdM6S+uFobnMefUSq3mArq60qnthRXdYcWkzjwptcxgjSESdemRZkMFC5gcyiVQ9VEQSUtTWQE1feZuexZ4qBP/cxG2IxWR8xdt6MEE6WTFA="},{"name":"DKIM-Signature","value":"v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1679122679; h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID; bh=zCycyghpu6yrESjQb2zzbec2+709Mvj9BWeZr2/RRcA=; b=GB0S/hGMt7pRXjLtARAlWdZkNIAMV7OgoAspWs3F28dnjfjLYeT4u18lWH0fe3II+OgBngKU9cIY+tCDu1tGxT53TIVY6ba2RqJyeZ4aGbKVBLw/ICwDOG2kdQBz6rQpufZk3w9VVKQNRlWk5sK32nRlIL+mldWIRwcCiolrL8c="},{"name":"Date","value":"Sat, 18 Mar 2023 06:57:59 +0000"},{"name":"From","value":"Amazon Certificates <no-reply@certificates.amazon.com>"},{"name":"To","value":"admin@glxymesh.co"},{"name":"Message-ID","value":"<01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@email.amazonses.com>"},{"name":"Subject","value":"Certificate request for glxymesh.co"},{"name":"MIME-Version","value":"1.0"},{"name":"Content-Type","value":"multipart/alternative;  boundary="----=_Part_1693373_1723048746.1679122678721""},{"name":"Feedback-ID","value":"1.us-east-1.Z2tzV9jDOxElQcdHBxcESSDNQ/wayIy/uC/Gr3Qjgew=:AmazonSES"},{"name":"X-SES-Outgoing","value":"2023.03.18-54.240.11.19"}],"commonHeaders":{"returnPath":"01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com","from":["Amazon Certificates <no-reply@certificates.amazon.com>"],"date":"Sat, 18 Mar 2023 06:57:59 +0000","to":["admin@glxymesh.co"],"messageId":"<01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@email.amazonses.com>","subject":"Certificate request for glxymesh.co"}},"receipt":{"timestamp":"2023-03-18T06:58:00.200Z","processingTimeMillis":661,"recipients":["admin@glxymesh.co"],"spamVerdict":{"status":"PASS"},"virusVerdict":{"status":"PASS"},"spfVerdict":{"status":"PASS"},"dkimVerdict":{"status":"PASS"},"dmarcVerdict":{"status":"PASS"},"action":{"type":"SNS","topicArn":"arn:aws:sns:us-east-1:586253084216:Email_Validation","encoding":"UTF8"}},"content":"Return-Path: <01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com>
+Received: from a11-19.smtp-out.amazonses.com (a11-19.smtp-out.amazonses.com [54.240.11.19])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id afv87h52j42ilo3262i69r6rc603khgfqodojdo1
+ for admin@glxymesh.co;
+ Sat, 18 Mar 2023 06:58:00 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of bounces.certificates.amazon.com designates 54.240.11.19 as permitted sender) client-ip=54.240.11.19; envelope-from=01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com; helo=a11-19.smtp-out.amazonses.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of bounces.certificates.amazon.com designates 54.240.11.19 as permitted sender) client-ip=54.240.11.19; envelope-from=01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@bounces.certificates.amazon.com; helo=a11-19.smtp-out.amazonses.com;
+ dkim=pass header.i=@certificates.amazon.com;
+ dkim=pass header.i=@amazonses.com;
+ dmarc=pass header.from=certificates.amazon.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFdXFXOHpxM1VrdjM0VTMvTXM1OXpYTVMyWSs1dHE5VUFLSUx4dC9BVDZBRGlxVGxBWnBHeVZETFhNejVwd1dFWHE1RXpaa2VQTWoyN3lsc2J5dURUT1pybkdaNWZWSVhTT0kxZVZDOXNUaEZoOVNMNjIwRVJDWlpmVHF3c0phUDlmLzUrSjhWbnk0azBOdlYxR0I4Y09oZHRWN3hsZjQ2SUExdjVUR01ESWZEa0thalZyczRucHJjdnVjbHFBU1ZxRzBpNFpUNVMyZGNEK1VOb21WY0dZbFdEMUtSVEJxUWNjbFZCZFlhTzF3enZCVWxWV3FmS0FnR2d1SUU2SEUxOS9sMVpVRkJ3dG9hWlZBZ01iUE95Y0o0WkE3L0N2aXhmbFlpc3hoK1k0SDR1d0xhcFRBOWQxYTF5MjhPT3NkdkZxbXF5c2lvUVdzNFlUbGZ1dnhZT3JaaVZIYk5PdGRoN2h2emFXM3Y4S2RUTG54QmlyblRiOENlSkcvUStJWDZvPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=OTNEn3A/AYX0VYAQzVeSiPS/A+VvjMnVWeBfrVSajLXBikeVLlbSToq/CcyhcwKt+0KEOibgLpxJQMcqjQudOt/pEDb4psDjUiR+FB7BKdwE/ijwiEj9nBtsqXpfSeVx5rV+VUtt/sD6FW2jXTH5ea6BzIIRXVc1noLEyQQ9bEc=; c=relaxed/simple; s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1679122680; v=1; bh=zCycyghpu6yrESjQb2zzbec2+709Mvj9BWeZr2/RRcA=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6qmbfpvjuhhxvoggo6cu77v4uhc7snn6; d=certificates.amazon.com;
+	t=1679122679;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=zCycyghpu6yrESjQb2zzbec2+709Mvj9BWeZr2/RRcA=;
+	b=HyCH6iIMAWHUkmuWdq8DHJzSjuu0/y6xijeOJkluK/BMi0aKE7JC3c8YskhFJS1c
+	dM6S+uFobnMefUSq3mArq60qnthRXdYcWkzjwptcxgjSESdemRZkMFC5gcyiVQ9VEQS
+	UtTWQE1feZuexZ4qBP/cxG2IxWR8xdt6MEE6WTFA=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1679122679;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=zCycyghpu6yrESjQb2zzbec2+709Mvj9BWeZr2/RRcA=;
+	b=GB0S/hGMt7pRXjLtARAlWdZkNIAMV7OgoAspWs3F28dnjfjLYeT4u18lWH0fe3II
+	+OgBngKU9cIY+tCDu1tGxT53TIVY6ba2RqJyeZ4aGbKVBLw/ICwDOG2kdQBz6rQpufZ
+	k3w9VVKQNRlWk5sK32nRlIL+mldWIRwcCiolrL8c=
+Date: Sat, 18 Mar 2023 06:57:59 +0000
+From: Amazon Certificates <no-reply@certificates.amazon.com>
+To: admin@glxymesh.co
+Message-ID: <01000186f382c786-c22b3027-82f4-4ca1-97d7-90f3b6a9aae3-000000@email.amazonses.com>
+Subject: Certificate request for glxymesh.co
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1693373_1723048746.1679122678721"
+Feedback-ID: 1.us-east-1.Z2tzV9jDOxElQcdHBxcESSDNQ/wayIy/uC/Gr3Qjgew=:AmazonSES
+X-SES-Outgoing: 2023.03.18-54.240.11.19
+
+------=_Part_1693373_1723048746.1679122678721
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Greetings from Amazon Web Services,
+
+ We received a request to issue an SSL/TLS certificate for glxymesh.co.
+
+ Verify that the following domain, AWS account ID, and certificate identifier
+ correspond to a request from you or someone in your organization.
+
+ Domain: glxymesh.co
+ AWS account ID: 586253084216
+ AWS Region name: us-east-1
+ Certificate Identifier: arn:aws:acm:us-east-1:586253084216:certificate/0cc441fe-d285-439a-afcb-3d71c0c4d9af
+
+ To approve this request, go to Amazon Certificate Approvals at
+ https://us-east-1.acm-certificates.amazon.com/approvals?code=4112d077-6ed0-49fa-b59e-041c9cf5628f&context=61726e3a6177733a61636d3a75732d656173742d313a3538363235333038343231363a76616c69646174696f6e2f3362646636393261643965363030383361616662623335656666353865663832-61726e3a6177733a61636d3a75732d656173742d313a3538363235333038343231363a63657274696669636174652f30636334343166652d643238352d343339612d616663622d336437316330633464396166-75732d656173742d31
+ and follow the instructions on the page.
+
+ This email is intended solely for authorized individuals for glxymesh.co.
+ To express any concerns about this email or if this email has reached you in
+ error, forward it along with a brief explanation of your concern to
+ validation-questions@amazon.com.
+
+ Sincerely,
+ Amazon Web Services
+
+ --
+ Amazon Web Services, Inc. is a subsidiary of Amazon.com, Inc. Amazon.com is a
+ registered trademark of Amazon.com, Inc.
+
+ This message produced and distributed by Amazon Web Services, Inc.,
+ 410 Terry Ave. North, Seattle, WA 98109-5210.
+
+ (c)2015, Amazon Web Services, Inc. or its affiliates. All rights reserved.
+ Our privacy policy is posted at https://aws.amazon.com/privacy
+------=_Part_1693373_1723048746.1679122678721
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+         <head>
+     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8" />
+     <title>Domain Validation</title>
+     <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0" />
+     <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+     <style type=3D"text/css">
+       @media only screen and (max-width:460px){                 body[yahoo=
+] table {width:100% !important;}                      body[yahoo] marginAl =
+{width:15px !important;}                   body[yahoo] .socialContainer {te=
+xt-align:center;}                       body[yahoo] .socialPod {display:inl=
+ine-block;width:18%;text-align:center;}                      body[yahoo] .s=
+ocialDivider {display:inline-block;width:7%;}                     body[yaho=
+o] .imageStr {width:100% !important;}                  body[yahoo] .disAppe=
+ar {display:none !important;}                        !important;background-=
+repeat: no-repeat !important;background-position: center !important;width:3=
+20px !important;height:120px !important;}                     }
+     </style>
+   </head>
+   <body yahoo=3D"fix" style=3D"margin-top:0;margin-bottom:0;margin-left:0;=
+margin-right:0;">
+     <div>
+       <table style=3D"background-color:#F8F8F8;" bgcolor=3D"#F8F8F8" width=
+=3D"100%" align=3D"center" cellspacing=3D"0" cellpadding=3D"0"><tr><td>
+               <br/><table style=3D"font-family: arial, helvetica, sans-ser=
+if; font-size:14px; line-height:20px; background-color: #FFFFFF; font-color=
+:black;border-top:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-b=
+ottom:1px solid #e8e8e8;border-left:1px solid #e8e8e8;" align=3D"center" bg=
+color=3D"#ffffff" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" itemsco=
+pe itemtype=3D"EmailMessage"><meta itemprop=3D"description" content=3D"Appr=
+ove certificate for glxymesh.co"/>
+                   <tr>
+                     <td width=3D"30" class=3D"marginAl">
+                       <img style=3D"display: block;" src=3D"https://certif=
+icates.amazon.com/images/spacer.gif" border=3D"0" alt=3D"" width=3D"30" hei=
+ght=3D"1" class=3D"marginAl"/>
+                     </td>
+                     <td style=3D"font-family: arial, helvetica, sans-serif=
+; font-size:14px; line-height:20px;">
+                       <p itemprop=3D"publisher" itemscope itemtype=3D"http=
+://schema.org/Organization"><a itemprop=3D"url" href=3D"https://aws.amazon.=
+com/"><img src=3D"https://certificates.amazon.com/aws-email-logo.png" alt=
+=3D"Amazon Web Services"/></a><meta itemprop=3D"name" content=3D"Amazon Web=
+ Services"/></p>
+                       <p>Greetings from Amazon Web Services,</p>
+                       <p>We received a request to issue an SSL/TLS certifi=
+cate for <b><span id=3D"requested_domain">glxymesh.co</span></b>.</p>
+                       <p>Verify that the following domain, AWS account ID,=
+ and certificate identifier correspond to a request from you or someone in =
+your organization.</p>
+                       <p>Domain: <b><span id=3D"fqdn">glxymesh.co</span></=
+b><br/>AWS account ID: <b><span id=3D"account_id">586253084216</span></b><b=
+r/>AWS Region name: <b><span id=3D=E2=80=9Cregion_name=E2=80=9D>us-east-1</=
+span></b><br/>Certificate Identifier: <b><span id=3D=E2=80=9Ccertificate_id=
+entifier=E2=80=9D>arn:aws:acm:us-east-1:586253084216:certificate/0cc441fe-d=
+285-439a-afcb-3d71c0c4d9af</span></b></p>
+                       <p itemprop=3D"potentialAction" itemscope itemtype=
+=3D"http://schema.org/ViewAction">To approve this request, go to <b><a item=
+prop=3D"url" id=3D"approval_url" href=3D"https://us-east-1.acm-certificates=
+.amazon.com/approvals?code=3D4112d077-6ed0-49fa-b59e-041c9cf5628f&amp;conte=
+xt=3D61726e3a6177733a61636d3a75732d656173742d313a3538363235333038343231363a=
+76616c69646174696f6e2f33626466363932616439653630303833616166626233356566663=
+53865663832-61726e3a6177733a61636d3a75732d656173742d313a3538363235333038343=
+231363a63657274696669636174652f30636334343166652d643238352d343339612d616663=
+622d336437316330633464396166-75732d656173742d31">Amazon Certificate Approva=
+ls</a></b> ( https://us-east-1.acm-certificates.amazon.com/approvals?code=
+=3D4112d077-6ed0-49fa-b59e-041c9cf5628f&amp;context=3D61726e3a6177733a61636=
+d3a75732d656173742d313a3538363235333038343231363a76616c69646174696f6e2f3362=
+646636393261643965363030383361616662623335656666353865663832-61726e3a617773=
+3a61636d3a75732d656173742d313a3538363235333038343231363a6365727469666963617=
+4652f30636334343166652d643238352d343339612d616663622d3364373163306334643961=
+66-75732d656173742d31 ) and follow the instructions on the page.<meta itemp=
+rop=3D"name" content=3D"Approve Certificate"/></p>
+                       <p><i>This email is intended solely for authorized i=
+ndividuals for glxymesh.co. To express any concerns about this email or if =
+this email has reached you in error, forward it along with a brief explanat=
+ion of your concern to <a href=3D"mailto:validation-questions@amazon.com">v=
+alidation-questions@amazon.com</a>.</i></p>
+                       <p>Sincerely,<br/>Amazon Web Services</p>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td width=3D"30" class=3D"marginAl">
+                       <img style=3D"display: block;" src=3D"https://certif=
+icates.amazon.com/images/spacer.gif" border=3D"0" alt=3D"" width=3D"30" hei=
+ght=3D"1" class=3D"marginAl"/>
+                     </td>
+                     <td align=3D"left">
+                       <p style=3D"font-size:9px; color:#999; line-height:1=
+2px; margin-top:0px; text-align:left; font-family:Arial, Helvetica, sans-se=
+rif;" align=3D"left"><br/>Amazon Web Services, Inc. is a subsidiary of Amaz=
+on.com, Inc. Amazon.com is a registered trademark of Amazon.com, Inc.<br/><=
+br/>This message produced and distributed by Amazon Web Services, Inc., 410=
+ Terry Ave. North, Seattle, WA 98109-5210.<br/><br/>&copy;2015, Amazon Web =
+Services, Inc. or its affiliates. All rights reserved. View our <a style=3D=
+"color: #787878; text-decoration: none;" href=3D"https://aws.amazon.com/pri=
+vacy/">privacy policy</a>.</p>
+                     </td>
+                   </tr>
+                 </table><br/>
+               </td></tr></table>
+       </div>
+   </body>
+ </html>
+------=_Part_1693373_1723048746.1679122678721--
+"}
